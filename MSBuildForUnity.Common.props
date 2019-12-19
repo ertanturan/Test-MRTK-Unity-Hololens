@@ -6,8 +6,8 @@
     <UnityProjectAssetsPath>C:\Users\ertan.turan\Desktop\UNITY\GITHUB\Test-MRTK-Unity-Hololens\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
-    <UnityCurrentPlatform>WindowsStandalone32</UnityCurrentPlatform>
-    <UnityCurrentTargetFramework>netstandard2.0</UnityCurrentTargetFramework>
+    <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
+    <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
     
     <UnityMajorVersion>2019</UnityMajorVersion>
     <UnityMinorVersion>2</UnityMinorVersion>
