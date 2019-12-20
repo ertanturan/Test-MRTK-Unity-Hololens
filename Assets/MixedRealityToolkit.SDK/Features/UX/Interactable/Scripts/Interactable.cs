@@ -596,6 +596,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
             RefreshSetup();
 
             IsEnabled = enabledOnStart;
+
+
         }
 
         protected virtual void OnEnable()
@@ -1171,6 +1173,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
         protected void SendOnClick(IMixedRealityPointer pointer)
         {
             OnClick.Invoke();
+            Debug.Log("Clicked to : " + gameObject.name);
             ClickCount++;
 
             for (int i = 0; i < InteractableEvents.Count; i++)
@@ -1240,6 +1243,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
         /// </summary>
         public void SetInputDown()
         {
+            Debug.Log("Down");
+
             if (!CanInteract())
             {
                 return;
@@ -1258,6 +1263,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
         /// </summary>
         public void SetInputUp()
         {
+            Debug.Log("Up");
+
             if (!CanInteract())
             {
                 return;

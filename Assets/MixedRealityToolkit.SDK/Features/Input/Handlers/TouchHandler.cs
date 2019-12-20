@@ -15,20 +15,32 @@ namespace Microsoft.MixedReality.Toolkit.Input
         public TouchEvent OnTouchUpdated = new TouchEvent();
         #endregion
 
+        private void Awake()
+        {
+            OnTouchStarted.AddListener(delegate { TestFunction(); });
+        }
 
         void IMixedRealityTouchHandler.OnTouchCompleted(HandTrackingInputEventData eventData)
         {
             OnTouchCompleted.Invoke(eventData);
+            Debug.Log("Completed");
         }
 
         void IMixedRealityTouchHandler.OnTouchStarted(HandTrackingInputEventData eventData)
         {
             OnTouchStarted.Invoke(eventData);
+            Debug.Log("Started");
         }
 
         void IMixedRealityTouchHandler.OnTouchUpdated(HandTrackingInputEventData eventData)
         {
             OnTouchUpdated.Invoke(eventData);
+            Debug.Log("Updated");
+        }
+
+        private void TestFunction()
+        {
+            Debug.Log("Test function ");
         }
     }
 }

@@ -474,6 +474,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
         private void UpdatePressedState(float pushDistance)
         {
+
             // If we aren't in a press and can't start a simple one.
             if (!IsPressing)
             {
